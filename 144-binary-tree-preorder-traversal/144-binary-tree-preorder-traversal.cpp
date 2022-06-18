@@ -16,8 +16,7 @@ public:
         if(node==NULL)return;
         ans.push_back(node->val);
         dfs(node->left);
-        dfs(node->right);
-        return;   
+        dfs(node->right);   
     }
 public:
     vector<int> preorderTraversal(TreeNode* root) {
